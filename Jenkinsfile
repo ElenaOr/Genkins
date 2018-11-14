@@ -2,11 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
+       stage ('Build') {
+ 
+steps {
+ 
+bat "dotnet build --configuration Release"
+ 
+}
+ 
+}
         stage('Test') {
             steps {
                 echo 'Testing..'
