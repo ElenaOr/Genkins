@@ -6,10 +6,11 @@ pipeline {
         stage ('Build') {
  
 steps {
+ steps {
  
-
+bat "dotnet build --configuration Debug"
  
-bat "dotnet pack --no-build --output nupkgs"
+}
  
 }
  
