@@ -11,6 +11,15 @@ bat "dotnet build --configuration Release"
 }
  
 }
+        stage ('Build') {
+ 
+steps {
+ 
+bat "dotnet pack --no-build --output nupkgs"
+ 
+}
+ 
+}
         stage('Test') {
             steps {
                 echo 'Testing..'
