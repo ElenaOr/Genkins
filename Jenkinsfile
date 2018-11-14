@@ -12,7 +12,7 @@ bat "dotnet build --configuration Release"
 }
             steps {
  
-bat "dotnet pack --no-build --output mypackage"
+bat "dotnet pack --no-build --output d:\elena\try"
  
 }
  
