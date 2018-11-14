@@ -3,14 +3,11 @@ pipeline {
 
     stages {
       
-        stage ('Build') {
+       stage ('Build') {
  
 steps {
-steps {
  
-bat "dotnet build --configuration Release"
- 
-}
+bat "dotnet build --configuration Debug"
  
 }
  
