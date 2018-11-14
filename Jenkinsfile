@@ -15,7 +15,7 @@ bat "dotnet build --configuration Release"
  
 steps {
  
-bat "dotnet pack --no-build --output nupkgs"
+bat "dotnet pack --no-build --output d:\nupkgs"
  
 }
  
