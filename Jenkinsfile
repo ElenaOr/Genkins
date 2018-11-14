@@ -7,6 +7,11 @@ pipeline {
  
 steps {
  
+bat "dotnet build --configuration Release"
+ 
+}
+            steps {
+ 
 bat "dotnet pack --no-build --output mypackage"
  
 }
