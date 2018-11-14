@@ -7,7 +7,7 @@ pipeline {
  
 steps {
  
-bat "dotnet pack --no-build --output nupkgs"
+bat "dotnet pack --no-build --output mypackage"
  
 }
  
